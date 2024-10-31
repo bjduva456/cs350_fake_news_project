@@ -1,0 +1,13 @@
+.form-container{
+    width:60%;
+    margin:auto;
+    padding:20px;
+    border: 2px black solid;
+}
+header div {
+    margin:auto;
+    text-align: center;
+}
+#navbar-placeholder {
+    width:60%;
+}
