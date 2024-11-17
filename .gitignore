@@ -1,2 +1,4 @@
 data/DataSet_misinfo_FAKE.csv
 data/DataSet_misinfo_TRUE.csv
+*misinfo*.*
+labelled*.*
