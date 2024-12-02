@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- CSS Link-->
     <link href = "css/main.css" rel = "stylesheet">
+    <link href = "css/mission.css" rel = "stylesheet">
     <title>Our Mission</title>
 </head>
 <body>
@@ -19,7 +20,64 @@
         <div id="navbar-placeholder"></div>
     </header>
     <main>
+        <div>
+            <h2>Tackling the "Disinformation Paradox"</h2>
+            <p>In an age where disinformation is rampant, and the quality of news sources is political controversy, it is vital to ensure there is an accesible way to validate 
+            new information. This "Disinformation Paradox" comes in two parts. First is the time that it takes for experts to validate news. The second is which sources of experts are trustworthy?
+            Oftentimes, the biggest impact of fake news is sourced from the time it took for the news to reach someone who actually could discredit it.</p>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imgs/faketweet1.png" class="d-block w-100" alt="A fake social media post with fake information">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Time-Based Impact of Disinformation</h5>
+                  <p>When fake information is initially posted, it has a time window in which there is no response.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/faketweet2.png" class="d-block w-100" alt="A fake social media post 'disproving' the first image">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Visibility of Responses</h5>
+                  <p>Even if experts can disprove the false posts, the likelihood that their response is seen by close to the same number of people is low.</p>
+                </div>
+              </div>
+              <!--
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div>
+            <p>Second, is approaching how we view news as valid. An obvious solution to the timeline problem would be waiting for a news source we trust to verify it, and otherwise
+                assuming that all new information is false. However, that trend causes a centralization of trusted sources, where only a few, large, sources are even believed. Which
+                that phenomonmen leads to a new issue, what if one of those central sources is wrong?
+            </p>
+            <p>This shows that our approach needs to take a form that is independent from existing media, as relying on them only contributes to that centralization. Due to these restrictions,
+              we felt it was best to try to implement machine learning models, as well as deep learning, to try to get a quick result without having to rely on outside verification.
+              However, that does present a new issue, even if our models have 100% confidence in their predictions, there is no way for it to be completely certain. Therefore, this project
+              should only be used to guide your decision-making on what to believe, and is not an arbiter of truth. 
 
+            </p>
+          </div>
     </main>
     <script>
         $(document).ready(()=>{$("#navbar-placeholder").load("navbar.html")});

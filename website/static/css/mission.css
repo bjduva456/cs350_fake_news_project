@@ -1,0 +1,39 @@
+body{
+    width:65%;
+    margin:auto;
+    background-color: darkslategrey;
+}
+
+p {
+    color:antiquewhite;
+}
+h2{
+    color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color:darkslategrey;
+}
+
+.carousel-indicators li {
+    background-color: darkslategrey;
+}
+
+.carousel-indicators .active {
+    background-color: darkslateblue;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: black; 
+}
+
+.carousel-caption h5 {
+    font-size:2rem;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    padding-bottom:20px;
+}

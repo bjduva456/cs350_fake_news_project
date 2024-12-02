@@ -1,0 +1,20 @@
+.graph {
+    height: 30%;
+    width: 30%;
+}
+body{
+    width: 70%;
+    margin:auto;
+    background-color:aquamarine;
+}
+.results {
+    text-align:center;
+    background-color:antiquewhite;
+}
+.table {
+    width: 60%;
+    margin:auto;
+}
+#navbar-placeholder {
+    background-color:antiquewhite;
+}

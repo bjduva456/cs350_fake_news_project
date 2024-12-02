@@ -11,3 +11,7 @@ header div {
 #navbar-placeholder {
     width:60%;
 }
+body {
+    width:80%;
+    margin:auto;
+}

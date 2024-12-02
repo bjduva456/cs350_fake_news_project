@@ -2,3 +2,10 @@ data/DataSet_misinfo_FAKE.csv
 data/DataSet_misinfo_TRUE.csv
 *misinfo*.*
 labelled*.*
+website/package-lock.json
+website/node_modules/**
+models/dnn_tf.keras
+models/svc_best.joblib
+.ipynb_checkpoints
+website/.ipynb_checkpoints
+website/nodemon.json

@@ -11,7 +11,9 @@
     }
 
     function sendData() {
-        console.log("send data");
+        const text = id("exampleFormControlTextarea1").value;
+        window.sessionStorage.setItem("text", text);
+        //open the results.html page...
     }
     /* ------------------------------ Helper Functions  ------------------------------ */
 
@@ -31,25 +33,5 @@
      */
     function qs(query) {
         return document.querySelector(query);
-    }
-
-    /**
-     * Returns the array of elements that match the given CSS selector.
-     * @param {string} query - CSS query selector
-     * @returns {object[]} array of DOM objects matching the query.
-     */
-    function qsa(query) {
-        return document.querySelectorAll(query);
-    }
-
-    /**
-     * This function needs documentation.
-     * @returns {} response
-     */
-    function checkStatus(response) {
-        if (!response.ok) {
-            throw Error("Error in request: " + response.statusText);
-        }
-        return response;
     }
 })()
