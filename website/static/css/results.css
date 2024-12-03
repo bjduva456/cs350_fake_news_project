@@ -1,20 +1,26 @@
 .graph {
-    height: 30%;
-    width: 30%;
+    height: 40%;
+    width: 40%;
 }
 body{
-    width: 70%;
+    width: 60%;
     margin:auto;
-    background-color:aquamarine;
+    background-color:rgb(114, 214, 181);
 }
 .results {
     text-align:center;
     background-color:antiquewhite;
+    padding-bottom:20%;
+    justify-content: center;
+}
+.results img {
+    margin-top:10px;
+    margin-bottom:10px;
 }
 .table {
     width: 60%;
     margin:auto;
 }
 #navbar-placeholder {
-    background-color:antiquewhite;
+    background-color:bisque;
 }

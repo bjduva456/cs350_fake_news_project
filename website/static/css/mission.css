@@ -1,14 +1,18 @@
 body{
     width:65%;
     margin:auto;
-    background-color: darkslategrey;
 }
 
 p {
-    color:antiquewhite;
+    color:black;
+    width: 80%;
+    margin:auto;
+    margin-top:10px;
 }
 h2{
-    color: white;
+    color: black;
+    width:80%;
+    margin:auto;
 }
 
 .carousel-control-prev-icon,
@@ -36,4 +40,12 @@ h2{
 .carousel-caption p {
     font-size: 1.25rem;
     padding-bottom:20px;
+}
+
+#carouselExampleIndicators {
+    width:70%;
+    margin:auto;
+}
+main {
+    background-color:bisque;
 }

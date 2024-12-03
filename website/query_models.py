@@ -50,9 +50,10 @@ def use_models(input):
     X_new_tf = tensorflow.convert_to_tensor(X_new.toarray(), dtype = tensorflow.float32)
     #print("New type: " + str(type(X_new_tf)))
     dnn_conf = dnn.predict(X_new_tf)
+    svc_conf = svc.predict_proba(X_new.toarray())
     predictions = {}
     predictions['label'] = ['Real' if x == 0 else 'Fake' for x in [bnb.predict(X_new)[0], rfc.predict(X_new)[0], svc.predict(X_new.toarray())[0], make_dnn_label(dnn_conf[0][0])]]
-    predictions['confidence'] = [bnb.predict_proba(X_new).max(axis = 1)[0], rfc.predict_proba(X_new).max(axis = 1)[0], 1.0, dnn_conf[0][0]]
+    predictions['confidence'] = [bnb.predict_proba(X_new).max(axis = 1)[0], rfc.predict_proba(X_new).max(axis = 1)[0], max(svc_conf[0]), dnn_conf[0][0]]
     models = ['Bernoulli Naive-Bayes', 'Random Forest', 'Support Vector Classifier', 'Deep Neural Network']
     pred_df = pd.DataFrame(predictions, index = models)
     ax = sns.barplot(data = pred_df, x = pred_df.index, y = 'confidence', hue = 'label', palette='BuGn')
