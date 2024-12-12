@@ -4,16 +4,16 @@
     
     function init() {
         qs("form button").addEventListener('click', (e) => {
-            e.preventDefault();
+            e.preventDefault(); //event.preventdefault() is used as Bootstrap buttons tend to refresh the page when clicked.
             sendData();
-            open("results.html", "_self");
+            open("results.html", "_self"); //redirects the user to results.html
         });
     }
 
+    //This function is used to store the data input by the user in sessionStorage, which can then be sent to the server in a POST request in results.js.
     function sendData() {
         const text = id("exampleFormControlTextarea1").value;
         window.sessionStorage.setItem("text", text);
-        //open the results.html page...
     }
     /* ------------------------------ Helper Functions  ------------------------------ */
 
